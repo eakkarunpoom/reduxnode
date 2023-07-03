@@ -32,10 +32,13 @@ const store = configureStore({
 
 console.log(store.getState());
 
-
+//subscribe update auto if have dispatch
+store.subscribe(()=>{
+  console.log('State Update !!!', store.getState());
+})
 //ACTION to REDUCER
 store.dispatch({type: 'INC_COUNTER'});
-console.log(store.getState());
+// console.log(store.getState());
 
 store.dispatch({type: 'DEC_COUNTER'});
-console.log(store.getState());
+// console.log(store.getState());
