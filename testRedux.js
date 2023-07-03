@@ -42,3 +42,4 @@ store.dispatch({type: 'INC_COUNTER'});
 
 store.dispatch({type: 'DEC_COUNTER'});
 // console.log(store.getState());
+
